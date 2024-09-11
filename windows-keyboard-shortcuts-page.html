@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>קיצורי מקלדת של Windows - המדריך המורחב</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap');
+        
+        :root {
+            --primary-color: #0078d4;
+            --secondary-color: #005a9e;
+            --text-color: #333;
+            --background-color: #f0f0f0;
+            --card-background: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Heebo', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+        }
+
+        .shortcuts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .shortcut-category {
+            background-color: var(--card-background);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .shortcut-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            position: sticky;
+            top: 0;
+            background-color: var(--card-background);
+            z-index: 1;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .shortcut-key {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .shortcut-key:hover {
+            background-color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .shortcuts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .shortcut-category {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        .shortcut-category:nth-child(1) { animation-delay: 0.1s; }
+        .shortcut-category:nth-child(2) { animation-delay: 0.2s; }
+        .shortcut-category:nth-child(3) { animation-delay: 0.3s; }
+        .shortcut-category:nth-child(4) { animation-delay: 0.4s; }
+
+        /* Scrollbar Styling */
+        .shortcut-category::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .shortcut-category::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .shortcut-category::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 4px;
+        }
+
+        .shortcut-category::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>קיצורי מקלדת של Windows</h1>
+            <p class="subtitle">המדריך המורחב לשיפור היעילות בעבודה עם Windows</p>
+        </header>
+
+        <main class="shortcuts-grid">
+            <section class="shortcut-category">
+                <h2>כללי</h2>
+                <ul>
+                    <li><span>פתיחת סייר הקבצים</span> <span class="shortcut-key">Windows + E</span></li>
+                    <li><span>הצגה/הסתרה של שולחן העבודה</span> <span class="shortcut-key">Windows + D</span></li>
+                    <li><span>נעילת המחשב</span> <span class="shortcut-key">Windows + L</span></li>
+                    <li><span>פתיחת הגדרות</span> <span class="shortcut-key">Windows + I</span></li>
+                    <li><span>מעבר בין חלונות פתוחים</span> <span class="shortcut-key">Alt + Tab</span></li>
+                    <li><span>פתיחת תפריט התחל</span> <span class="shortcut-key">Windows</span></li>
+                    <li><span>פתיחת מרכז הפעולות</span> <span class="shortcut-key">Windows + A</span></li>
+                    <li><span>פתיחת חיפוש Cortana</span> <span class="shortcut-key">Windows + S</span></li>
+                    <li><span>פתיחת מרכז התראות</span> <span class="shortcut-key">Windows + N</span></li>
+                    <li><span>פתיחת מעבר בין שולחנות עבודה וירטואליים</span> <span class="shortcut-key">Windows + Tab</span></li>
+                    <li><span>יצירת שולחן עבודה וירטואלי חדש</span> <span class="shortcut-key">Windows + Ctrl + D</span></li>
+                    <li><span>סגירת שולחן עבודה וירטואלי נוכחי</span> <span class="shortcut-key">Windows + Ctrl + F4</span></li>
+                    <li><span>מעבר בין שולחנות עבודה וירטואליים</span> <span class="shortcut-key">Windows + Ctrl + ימינה/שמאלה</span></li>
+                    <li><span>פתיחת תפריט קישור מהיר</span> <span class="shortcut-key">Windows + X</span></li>
+                    <li><span>צילום מסך של חלון פעיל</span> <span class="shortcut-key">Alt + PrtScn</span></li>
+                </ul>
+            </section>
+
+            <section class="shortcut-category">
+                <h2>ניהול חלונות</h2>
+                <ul>
+                    <li><span>הצמדת חלון לצד המסך</span> <span class="shortcut-key">Windows + מקש חץ</span></li>
+                    <li><span>העברת חלון למסך אחר</span> <span class="shortcut-key">Windows + Shift + מקש חץ</span></li>
+                    <li><span>מזעור כל החלונות למעט החלון הפעיל</span> <span class="shortcut-key">Windows + Home</span></li>
+                    <li><span>מקסום חלון</span> <span class="shortcut-key">Windows + למעלה</span></li>
+                    <li><span>מזעור חלון</span> <span class="shortcut-key">Windows + למטה</span></li>
+                    <li><span>מקסום/שחזור חלון אנכית</span> <span class="shortcut-key">Windows + Shift + למעלה/למטה</span></li>
+                    <li><span>סידור חלונות בצורת קסקדה</span> <span class="shortcut-key">Windows + Shift + 1</span></li>
+                    <li><span>סידור חלונות אנכית</span> <span class="shortcut-key">Windows + Shift + 2</span></li>
+                    <li><span>סידור חלונות אופקית</span> <span class="shortcut-key">Windows + Shift + 3</span></li>
+                    <li><span>החלפה בין חלונות של אותה תוכנית</span> <span class="shortcut-key">Ctrl + Alt + Tab</span></li>
+                    <li><span>סגירת החלון הפעיל</span> <span class="shortcut-key">Alt + F4</span></li>
+                    <li><span>פתיחת תפריט של החלון הפעיל</span> <span class="shortcut-key">Alt + מקש רווח</span></li>
+                    <li><span>הצגת שולחן העבודה</span> <span class="shortcut-key">Windows + ,</span></li>
+                    <li><span>הצגת תצוגת מטלות</span> <span class="shortcut-key">Windows + Tab</span></li>
+                    <li><span>פתיחת תצוגת זמן</span> <span class="shortcut-key">Windows + Ctrl + D</span></li>
+                </ul>
+            </section>
+
+            <section class="shortcut-category">
+                <h2>צילומי מסך ומולטימדיה</h2>
+                <ul>
+                    <li><span>צילום מסך מלא</span> <span class="shortcut-key">PrtScn</span></li>
+                    <li><span>פתיחת כלי צילום המסך</span> <span class="shortcut-key">Windows + Shift + S</span></li>
+                    <li><span>הפעלה/השהיה של מדיה</span> <span class="shortcut-key">Windows + Alt + P</span></li>
+                    <li><span>העלאת עוצמת הקול</span> <span class="shortcut-key">Windows + Ctrl + F</span></li>
+                    <li><span>הנמכת עוצמת הקול</span> <span class="shortcut-key">Windows + Ctrl + G</span></li>
+                    <li><span>השתקה</span> <span class="shortcut-key">Windows + Ctrl + M</span></li>
+                    <li><span>פתיחת Xbox Game Bar</span> <span class="shortcut-key">Windows + G</span></li>
+                    <li><span>הקלטת וידאו של המסך</span> <span class="shortcut-key">Windows + Alt + R</span></li>
+                    <li><span>צילום מסך ושמירה לקובץ</span> <span class="shortcut-key">Windows + PrtScn</span></li>
+                    <li><span>פתיחת מרכז הפעולות</span> <span class="shortcut-key">Windows + A</span></li>
+                    <li><span>פתיחת הגדרות תצוגה</span> <span class="shortcut-key">Windows + P</span></li>
+                    <li><span>פתיחת הגדרות מערכת</span> <span class="shortcut-key">Windows + I</span></li>
+                    <li><span>פתיחת מרכז הנגישות</span> <span class="shortcut-key">Windows + U</span></li>
+                    <li><span>הפעלת קורא המסך Narrator</span> <span class="shortcut-key">Windows + Ctrl + Enter</span></li>
+                    <li><span>הפעלת זכוכית מגדלת</span> <span class="shortcut-key">Windows + +</span></li>
+                </ul>
+            </section>
+
+            <section class="shortcut-category">
+                <h2>עריכה וניווט</h2>
+                <ul>
+                    <li><span>העתקה</span> <span class="shortcut-key">Ctrl + C</span></li>
+                    <li><span>גזירה</span> <span class="shortcut-key">Ctrl + X</span></li>
+                    <li><span>הדבקה</span> <span class="shortcut-key">Ctrl + V</span></li>
+                    <li><span>ביטול פעולה אחרונה</span> <span class="shortcut-key">Ctrl + Z</span></li>
+                    <li><span>חזרה על פעולה אחרונה</span> <span class="shortcut-key">Ctrl + Y</span></li>
+                    <li><span>בחירת הכל</span> <span class="shortcut-key">Ctrl + A</span></li>
+                    <li><span>מחיקת מילה שלמה</span> <span class="shortcut-key">Ctrl + Backspace</span></li>
+                    <li><span>מעבר לתחילת השורה</span> <span class="shortcut-key">Home</span></li>
+                    <li><span>מעבר לסוף השורה</span> <span class="shortcut-key
